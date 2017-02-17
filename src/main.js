@@ -19,6 +19,14 @@ import '../static/mui/css/icons-extra.css'
 //页面组件的全局样式表
 import '../static/css/sites.css'
 
+//引入时间过滤的包 moment
+import moment from 'moment';
+Vue.filter('timefmt',function(input,fmtStr){
+    fmtStr = fmtStr?fmtStr:"YYYY-MM-DD";
+    return moment(input).format(fmtStr)
+
+})
+
 //路由组件
 //import home from './components/Home.vue'
 //

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--1.0头部-->
-    <mt-header fixed title="固定在顶部"></mt-header>
+    <mt-header fixed title="朝花夕拾"></mt-header>
     <router-view></router-view>
 
     <!--3.0底部-->
