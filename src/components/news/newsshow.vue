@@ -14,14 +14,19 @@
 
     </div>
     <!--评论组件-->
+    <comment :artid ="newsid"></comment>
   </div>
 </template>
 
 <script>
+  //引入评论组件
+  import comment from '../subcom/comment.vue'
+
   export default {
     data:function(){
       return {
-        info:{}
+        info:{},
+        newsid:0
       }
     },
     methods:{
@@ -33,8 +38,13 @@
       }
     },
     created:function(){
+      this.newsid = this.$route.params.newsid;
       this.getNewsshow()
+    },
+    components:{
+      comment
     }
+
   }
 </script>
 
