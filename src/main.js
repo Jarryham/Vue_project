@@ -5,6 +5,11 @@ import App from './App'
 import router from './router'//路由组件，配置路由信息
 import VueRouter from 'vue-router'
 
+//图片懒加载
+import { Lazyload } from 'mint-ui';
+
+Vue.use(Lazyload);
+
 import vueResource from 'vue-resource'
 Vue.use(vueResource)
 
